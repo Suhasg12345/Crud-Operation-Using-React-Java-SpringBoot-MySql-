@@ -1,0 +1,43 @@
+<html>
+<head>
+<title>EmployeeMapper.java</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #cf8e6d;}
+.s1 { color: #bcbec4;}
+.s2 { color: #bcbec4;}
+</style>
+</head>
+<body bgcolor="#1e1f22">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+EmployeeMapper.java</font>
+</center></td></tr></table>
+<pre><span class="s0">package </span><span class="s1">net</span><span class="s2">.</span><span class="s1">javaguides</span><span class="s2">.</span><span class="s1">ems</span><span class="s2">.</span><span class="s1">mapper</span><span class="s2">;</span>
+
+<span class="s0">import </span><span class="s1">net</span><span class="s2">.</span><span class="s1">javaguides</span><span class="s2">.</span><span class="s1">ems</span><span class="s2">.</span><span class="s1">dto</span><span class="s2">.</span><span class="s1">EmployeeDto</span><span class="s2">;</span>
+<span class="s0">import </span><span class="s1">net</span><span class="s2">.</span><span class="s1">javaguides</span><span class="s2">.</span><span class="s1">ems</span><span class="s2">.</span><span class="s1">entity</span><span class="s2">.</span><span class="s1">Employee</span><span class="s2">;</span>
+
+<span class="s0">public class </span><span class="s1">EmployeeMapper </span><span class="s2">{</span>
+    <span class="s0">public static </span><span class="s1">EmployeeDto mapToEmployeeDto</span><span class="s2">(</span><span class="s1">Employee employee</span><span class="s2">){</span>
+        <span class="s0">return new </span><span class="s1">EmployeeDto</span><span class="s2">(</span>
+                <span class="s1">employee</span><span class="s2">.</span><span class="s1">getId</span><span class="s2">(),</span>
+                <span class="s1">employee</span><span class="s2">.</span><span class="s1">getFirstName</span><span class="s2">(),</span>
+                <span class="s1">employee</span><span class="s2">.</span><span class="s1">getLastName</span><span class="s2">(),</span>
+                <span class="s1">employee</span><span class="s2">.</span><span class="s1">getEmail</span><span class="s2">()</span>
+        <span class="s2">);</span>
+    <span class="s2">}</span>
+
+    <span class="s0">public  static  </span><span class="s1">Employee mapToEmployee</span><span class="s2">(</span><span class="s1">EmployeeDto employeeDto</span><span class="s2">){</span>
+        <span class="s0">return new </span><span class="s1">EmployeeDto</span><span class="s2">(</span>
+                <span class="s1">employeeDto</span><span class="s2">.</span><span class="s1">getId</span><span class="s2">(),</span>
+                <span class="s1">employeeDto</span><span class="s2">.</span><span class="s1">getFirstName</span><span class="s2">(),</span>
+                <span class="s1">employeeDto</span><span class="s2">.</span><span class="s1">getLastName</span><span class="s2">(),</span>
+                <span class="s1">employeeDto</span><span class="s2">.</span><span class="s1">getEmail</span><span class="s2">()</span>
+        <span class="s2">);</span>
+    <span class="s2">}</span>
+<span class="s2">}</span>
+</pre>
+</body>
+</html>
